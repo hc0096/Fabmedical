@@ -20,3 +20,4 @@ FROM base as final
 WORKDIR /usr/src/app
 COPY --from=build /usr/src/app .
 CMD [ "node", "app.js" ]
+ENV CONTENT_API_URL http://localhost:3001
